@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { Eye, EyeOff, Loader2, Lock, Mail, MessageSquare } from "lucide-react";
 
 const LoginPage = () => {
-  const [showPassword, setShowPassword] = useState(false); //hi
+  const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({
     email: "",
     password: "",
@@ -109,13 +109,11 @@ const LoginPage = () => {
       </div>
 
       {/* Right Side - Image/Pattern */}
-      
-      <AuthImagePattern  
-      
+      <AuthImagePattern
         title={"Welcome back!"}
         subtitle={"Sign in to continue your conversations and catch up with your messages."}
       />
     </div>
   );
 };
-export default LoginPage;
+export default LoginPage;
